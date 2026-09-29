@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Principal -->
+    <title>Ana Clara Martins | Portfólio & Desenvolvimento Web</title>
+    <meta name="description" content="Portfólio profissional de Ana Clara Martins. Estudante de TI, Suporte Técnico e Desenvolvimento Web.">
+    <meta name="keywords" content="Ana Clara Martins, Portfólio TI, Suporte Técnico, Desenvolvimento Web, Excel, Canva, Inglês">
+    <meta name="author" content="Ana Clara Martins">
+    <meta name="robots" content="index, follow">
+
+    <!-- SEO Geográfico (GEO SEO) -->
+    <meta name="geo.region" content="BR-MG">
+    <meta name="geo.placename" content="Minas Gerais, Brasil">
+    <meta name="geo.position" content="-18.5122;-44.5550">
+    <meta name="ICBM" content="-18.5122, -44.5550">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ana Clara Martins | Portfólio & Desenvolvimento Web">
+    <meta property="og:description" content="Conheça os projetos e serviços de TI de Ana Clara Martins.">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Fontes e Ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <nav class="navbar" id="top-menu">
+            <a href="#inicio" class="logo">Ana Clara<span class="dot"></span></a>
+            
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Quem Sou Eu</a></li>
+                
+                <!-- SUBMENU ESTUDOS -->
+                <li class="dropdown">
+                    <a href="#estudos" class="dropbtn">Estudos <i class="fa-solid fa-chevron-down drop-icon"></i></a>
+                    <div class="dropdown-content">
+                        <a href="seo.html"><i class="fa-solid fa-magnifying-glass"></i> Artigo SEO</a>
+                        <a href="geo.html"><i class="fa-solid fa-location-dot"></i> Artigo GEO</a>
+                        <a href="semantica.html"><i class="fa-solid fa-code"></i> Semântica HTML</a>
+                    </div>
+                </li>
+
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <!-- BOTÃO CADEADO -->
+            <button onclick="toggleAdminModal()" class="btn-lock" title="Acesso Restrito ao Painel">
+                <i class="fa-solid fa-lock"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="badge"><i class="fa-solid fa-bolt"></i> DESENVOLVIMENTO & TI</span>
+                    <h1>Olá, eu sou a <br><span class="gradient-text">Ana Clara Martins</span></h1>
+                    <h2>Estudante de TI, Suporte Técnico & Desenvolvedora</h2>
+                    <p class="descricao">
+                        Tenho 17 anos, formação técnica em informática e cursos concluídos em <strong>Computação</strong> e <strong>Inglês</strong>. Crio soluções digitais modernas, desenvolvimento web e suporte técnico.
+                    </p>
+                    <div class="buttons">
+                        <a href="#projetos" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Ver Meus Sites</a>
+                        <a href="#contato" class="btn btn-secondary"><i class="fa-regular fa-paper-plane"></i> Falar Comigo</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="photo-card">
+                        <div class="photo-wrapper">
+                            <img src="logo sem fundo.png" alt="Foto de Ana Clara Martins">
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUEM SOU EU -->
+        <section id="sobre" class="section">
+            <div class="section-header">
+                <span class="sub-title">APRESENTAÇÃO</span>
+                <h2>Quem Sou Eu</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text-box">
+                    <p>
+                        Meu nome é <strong>Ana Clara Martins Lisboa</strong>, tenho 17 anos e estudo na 
+                        <a href="https://www.escolaestadualdrjoaoberaldo.com/" target="_blank" class="link-highlight">E.E. Doutor João Beraldo</a>.
+                    </p>
+                    <p>
+                        Curso o 2º ano do Ensino Médio Técnico (EMTI). Possuo cursos concluídos nas áreas de <strong>Computação</strong> (ferramentas de escritório, sistemas e manutenção) e <strong>Inglês</strong>, ampliando minha capacidade de comunicação e leitura técnica internacional.
+                    </p>
+                    <p>
+                        Busco evolução constante no mercado de tecnologia para consolidar minha base profissional e conciliar com meu sonho de cursar <strong>Medicina Veterinária</strong>.
+                    </p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-num">17</span>
+                        <p>Anos de Idade</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">Inglês</span>
+                        <p>Curso Concluído</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">Comp.</span>
+                        <p>Curso de Computação</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">EMTI</span>
+                        <p>2º Ano Técnico</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESTUDOS (SEM OS BOTÕES "LER ARTIGO COMPLETO") -->
+        <section id="estudos" class="section">
+            <div class="section-header">
+                <span class="sub-title">CONHECIMENTO TÉCNICO</span>
+                <h2>Artigos de Estudos</h2>
+            </div>
+            <div class="cards-grid">
+                <article class="feature-card">
+                    <div class="card-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h3>SEO (Otimização de Busca)</h3>
+                    <p>Entenda como otimizar a estrutura de um site para alcançar os melhores resultados nos motores de busca.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>GEO SEO (Busca Local)</h3>
+                    <p>Estratégias de posicionamento geolocalizado para conectar empresas a clientes da região de Minas Gerais.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Semântica HTML5</h3>
+                    <p>A importância de organizar a estrutura de páginas com boas práticas semânticas e acessibilidade W3C.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- MEUS PROJETOS -->
+        <section id="projetos" class="section">
+            <div class="section-header">
+                <span class="sub-title">PORTFÓLIO PRÁTICO</span>
+                <h2>Projetos Desenvolvidos</h2>
+                <p style="color: var(--text-muted); margin-top: 0.5rem;">Sistemas web ativos e integrados com banco de dados Supabase.</p>
+            </div>
+
+            <div id="lista-projetos-publicos" class="projects-grid">
+                <!-- CARD FIXO DA PADARIA DOCE PÃO -->
+                <article class="project-card">
+                    <div class="card-icon"><i class="fa-solid fa-store"></i></div>
+                    <h3>Padaria Doce Pão</h3>
+                    <p>Website completo desenvolvido para a padaria, com visual moderno, catálogo de produtos e integração.</p>
+                    <a href="https://padaria-doce-pao.vercel.app/" target="_blank" class="card-link">Acessar o Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <!-- CARD DO PORTFÓLIO -->
+                <article class="project-card">
+                    <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Portfólio Digital EMTI</h3>
+                    <p>Plataforma web com artigos técnicos, painel administrativo privado com login e gestão de leads.</p>
+                    <a href="#inicio" class="card-link">Projeto Atual <i class="fa-solid fa-circle-check"></i></a>
+                </article>
+            </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section id="servicos" class="section">
+            <div class="section-header">
+                <span class="sub-title">SOLUÇÕES</span>
+                <h2>Serviços Prestados</h2>
+            </div>
+            <div class="cards-grid">
+                <article class="feature-card">
+                    <div class="card-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>Suporte Técnico & Computação</h3>
+                    <p>Formatação, manutenção de sistemas, configuração de softwares e auxílio com pacote Office/Excel.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de portfólios, sites institucionais e landing pages responsivas publicadas na Vercel.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="card-icon"><i class="fa-solid fa-file-excel"></i></div>
+                    <h3>Excel & Gestão de Dados</h3>
+                    <p>Organização de planilhas de controle, fórmulas personalizadas e otimização de dados operacionais.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Design com Canva</h3>
+                    <p>Criação de apresentações profissionais, artes promocionais e identidade visual para redes sociais.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTATO COM LGPD -->
+        <section id="contato" class="section">
+            <div class="section-header">
+                <span class="sub-title">VAMOS CONVERSAR</span>
+                <h2>Entre em Contato</h2>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Canais de Atendimento</h3>
+                    <p>Envie uma mensagem direta no WhatsApp ou preencha o formulário:</p>
+                    
+                    <a href="https://wa.me/5533997003179" target="_blank" class="contact-item">
+                        <div class="item-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div>
+                            <strong>WhatsApp Directo</strong>
+                            <span>(33) 99700-3179</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:martinslisboaana@gmail.com" class="contact-item">
+                        <div class="item-icon"><i class="fa-regular fa-envelope"></i></div>
+                        <div>
+                            <strong>E-mail Comercial</strong>
+                            <span>martinslisboaana@gmail.com</span>
+                        </div>
+                    </a>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <h3>Enviar Mensagem</h3>
+                    <div class="form-group">
+                        <label for="nome">Seu Nome *</label>
+                        <input type="text" id="nome" required placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="servico_interesse">Serviço Desejado</label>
+                        <input type="text" id="servico_interesse" placeholder="Ex: Criação de Site, Suporte...">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea id="mensagem" rows="4" required placeholder="Como posso te ajudar?"></textarea>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="aceite_privacidade" required>
+                        <label for="aceite_privacidade">
+                            Concordo com o salvamento dos meus dados para fins de contato (Termos LGPD). *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-whatsapp btn-block">
+                        <i class="fa-brands fa-whatsapp"></i> Enviar pelo WhatsApp
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+     <!-- MODAL ADMINISTRATIVO -->
+<div id="adminModal" class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2><i class="fa-solid fa-sliders"></i> Painel Administrativo</h2>
+            <button onclick="toggleAdminModal()" class="btn-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="modal-body">
+            <!-- ÁREA DE LOGIN -->
+            <div id="loginArea">
+                <form id="adminLoginForm">
+                    <div class="admin-form-group">
+                        <label for="adminEmail">E-mail</label>
+                        <input type="email" id="adminEmail" class="admin-input" placeholder="seuemail@exemplo.com" required>
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="adminSenha">Senha</label>
+                        <input type="password" id="adminSenha" class="admin-input" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn-primary-admin">
+                        <i class="fa-solid fa-right-to-bracket"></i> Entrar no Painel
+                    </button>
+                </form>
+            </div>
+
+            <!-- ÁREA DO DASHBOARD -->
+            <div id="dashboardArea" style="display: none;">
+                <div class="dash-session-bar">
+                    <span><i class="fa-solid fa-user-gear"></i> Administrador</span>
+                    <button onclick="logoutAdmin()" class="btn-logout"><i class="fa-solid fa-power-off"></i> Sair</button>
+                </div>
+
+                <!-- BOTÕES / ABAS DE NAVEGAÇÃO -->
+                <div class="tab-navigation">
+                    <button class="tab-btn active" onclick="openTab(event, 'tab-leads')">
+                        <i class="fa-solid fa-envelope"></i> Leads Recebidos
+                    </button>
+                    <button class="tab-btn" onclick="openTab(event, 'tab-projetos')">
+                        <i class="fa-solid fa-folder-plus"></i> Novo Projeto
+                    </button>
+                </div>
+
+                <!-- ABA 1: LEADS RECEBIDOS -->
+                <div id="tab-leads" class="tab-content active">
+                    <h3 class="tab-title">Leads Registrados</h3>
+                    <div class="table-container">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Serviço</th>
+                                    <th>Mensagem</th>
+                                    <th>LGPD</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabela-leads-body">
+                                <tr><td colspan="4">Carregando registros...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- ABA 2: CADASTRAR PROJETO -->
+                <div id="tab-projetos" class="tab-content">
+                    <h3 class="tab-title">Inserir Novo Projeto no Banco</h3>
+                    <form id="formNovoProjeto">
+                        <div class="admin-form-group">
+                            <label for="proj_titulo">Título do Projeto</label>
+                            <input type="text" id="proj_titulo" class="admin-input" placeholder="Ex: Website Padaria" required>
+                        </div>
+                        <div class="admin-form-group">
+                            <label for="proj_descricao">Descrição Curta</label>
+                            <textarea id="proj_descricao" class="admin-input" placeholder="Breve descrição do trabalho..." required></textarea>
+                        </div>
+                        <div class="admin-form-group">
+                            <label for="proj_link">URL do Site na Vercel / Web</label>
+                            <input type="url" id="proj_link" class="admin-input" placeholder="https://meudominio.vercel.app" required>
+                        </div>
+                        <button type="submit" class="btn-primary-admin">
+                            <i class="fa-solid fa-plus"></i> Inserir no Banco
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+    <a href="https://wa.me/5533997003179" class="float-whatsapp" target="_blank" title="Falar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-content">
+            <a href="#top-menu" class="footer-link-back">
+                &copy; 2026 <strong>@AnaClaraMartins</strong> • Todos os direitos reservados.
+            </a>
+            <p class="footer-sub">Clique no nome para retornar ao menu superior</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
